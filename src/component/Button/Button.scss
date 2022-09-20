@@ -1,0 +1,44 @@
+%base-styles {
+  width: 230px;
+  padding: 13px;
+  border: none;
+  background: none;
+  outline: none;
+  background-color: #00ce53;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 17px;
+  border-radius: 4px;
+  &:disabled {
+    background-color: #00ce5333;
+  }
+}
+
+.btn-primary {
+  @extend %base-styles;
+  //   background: styles.$btn-primary;
+  color: #fff;
+}
+
+// .btn-secondary {
+//   @extend %base-styles;
+//   background: transparent;
+//   color: #000;
+//   border: 1px solid styles.$btn-primary;
+// }
+
+// .btn-error {
+//   @extend %base-styles;
+//   background-color: tomato;
+//   color: var(--text-primary);
+//   box-shadow: 0px 4px 10px rgba(255, 99, 71, 0.25);
+//   padding: 0.5rem;
+//   font-size: 1.2rem;
+// }
+
+// .btn-primary-gradient {
+//   @extend %base-styles;
+//   background: var(--btn-primary-gradient);
+//   color: var(--text-primary);
+//   box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.15);
+// }

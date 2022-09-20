@@ -1,0 +1,35 @@
+// @font-face {
+//     font-family: "grold-black";
+//     src: url("/assets/fonts/Grold-Black.ttf")
+//   }
+//   @font-face {
+//     font-family: "grold-bold";
+//     src: url("/assets/fonts/Grold-Bold.ttf")
+//   }
+//   @font-face {
+//     font-family: "grold-extrablack";
+//     src: local("GroldExtraBlack"),
+//       url("/assets/fonts/Grold-ExtraBlack.ttf") format("truetype");
+//   }
+//   @font-face {
+//     font-family: "grold-extrabold";
+//     src: local("GroldExtraBold"),
+//       url("/assets/fonts/Grold-ExtraBold.ttf") format("truetype");
+//   }
+//   @font-face {
+//     font-family: "grold-medium";
+//     src: local("GroldMedium"),
+//       url("/assets/fonts/Grold-Medium.ttf") format("truetype");
+//   }
+//   @font-face {
+//     font-family: "grold-regular";
+//     src: local("GroldRegular"),
+//       url("/assets/fonts/Grold-Regular.ttf") format("truetype");
+//   }
+
+$font-black: "grold-black";
+$font-bold: "grold-bold";
+$font-extrablack: "grold-extrablack";
+$font-extrabold: "grold-extrabold";
+$font-medium: "grold-medium";
+$font-regular: "grold-regular";

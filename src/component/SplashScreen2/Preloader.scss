@@ -1,0 +1,52 @@
+.splashscreen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  display: grid;
+  place-items: center;
+  color: #fff;
+  z-index: 1000;
+
+  &_footer {
+    position: absolute;
+    bottom: 2rem;
+    left: 50%;
+    transform: translateX(-50%);
+
+    .splash_loader {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      margin-top: 16px;
+
+      @for $i from 1 to 4 {
+        span:nth-child(#{$i}) {
+          animation: bounce#{$i} 1000ms infinite linear;
+          animation-delay: $i * 100ms;
+
+          @keyframes bounce#{$i} {
+            from {
+              background-color: #636363;
+            }
+            to {
+              background-color: #fff;
+            }
+          }
+        }
+      }
+
+      span {
+        width: 5px;
+        height: 5px;
+        border-radius: 50%;
+        background-color: #636363;
+      }
+    }
+  }
+}

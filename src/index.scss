@@ -1,0 +1,60 @@
+@use "./styles";
+
+@font-face {
+  font-family: "grold-black";
+  src: url("./assets/fonts/Grold-Black.ttf");
+}
+@font-face {
+  font-family: "grold-bold";
+  src: url("./assets/fonts/Grold-Bold.ttf");
+}
+@font-face {
+  font-family: "grold-regular";
+  src: url("./assets/fonts/Grold-Regular.ttf");
+}
+@font-face {
+  font-family: "grold-medium";
+  src: url("./assets/fonts/Grold-Medium.ttf");
+}
+
+:root {
+  --color-primary: red;
+  --font-regular: "grold-regular";
+  --font-medium: "grold-medium";
+  --font-bold: "grold-bold";
+  --font-black: "grold-black";
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  background-color: black;
+  font-family: var(--font-regular);
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: styles.$font-black;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
